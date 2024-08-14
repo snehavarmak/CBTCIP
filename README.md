@@ -1,109 +1,61 @@
 # EventPlanner360
 
-EventPlanner360 is an all-in-one event management platform that enables users to plan, organize, and oversee diverse events such as conferences, weddings, and parties. This full-stack application is built using the MERN (MongoDB, Express.js, React, Node.js) stack.
+Introducing our Event Management System, a solution developed as part designed to streamline campus event planning, registration, and ticket booking. I played a key role as the architect, creating the user interface where I incorporated modern design principles and prioritized user experience. We are developing the system using the MERN stack (MongoDB, Express.js, React.js, Node.js), and we are utilizing the agile Scrum methodology for efficient development.
+
+Skills: Figma · Ui/ux · React.js · MongoDB · Node.js · Express.js · Requirements Analysis · User Interface Design
 
 ## Features
 
-- User authentication (registration and login)
-- Event creation and management
-- Guest list management
-- Budget tracking
-- Vendor coordination
-- Personalized event pages
-- Invitation management and RSVP tracking
-- Integration with payment gateways for ticket sales
+- Schedule a Event.
+- View upcoming events.
+- View the event calendar.
+- Getting approval for the events.
+- Ticket Booking for the event.
+- QR Code generation for receiving tickets.
 
-## Project Structure
+## Technologies Used
 
-```
-EventPlanner360/
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   └── components/
-│   │       ├── HomePage/
-│   │       ├── RegisterPage/
-│   │       ├── LoginPage/
-│   │       └── Dashboard/
-│   ├── package.json
-│   └── .env
-├── .gitignore
-└── README.md
-```
+- ReactJs
+- NodeJs
+- ExpressJs
+- MongoDB
+- NPM (Node Package Manager)
+- JWT webtoken
+- QR code
 
-## Prerequisites
+## Getting Started
 
-- Node.js (v14.0.0 or later)
-- npm (v6.0.0 or later)
-- MongoDB (v4.0.0 or later)
+### Prerequisites
+
+- Node.js and npm installed
+- MongoDB Database
 
 ## Setup and Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/EventPlanner360.git
-   cd EventPlanner360
+   git clone https://github.com/snehavarmak/CBTCIP.git
+   cd CBTCIP
    ```
 
 2. Set up the backend:
    ```
    cd backend
-   npm install
+   nodemon start
    ```
    Create a `.env` file in the backend directory and add the following:
    ```
    MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   PORT=5000
    ```
 
 3. Set up the frontend:
    ```
    cd ../frontend
-   npm install
-   ```
-   Create a `.env` file in the frontend directory and add:
-   ```
-   REACT_APP_API_URL=http://localhost:5000/api
+   npm run dev
    ```
 
-4. Start the backend server:
-   ```
-   cd ../backend
-   npm start
-   ```
+The application should now be running on `http://localhost:5173/`.
 
-5. In a new terminal, start the frontend development server:
-   ```
-   cd ../frontend
-   npm start
-   ```
-
-The application should now be running on `http://localhost:3000`.
-
-## Usage
-
-1. Register a new account or log in with existing credentials.
-2. Once logged in, you'll be directed to the dashboard where you can create and manage events.
-3. Use the various features to plan your event, manage guests, track budgets, and coordinate with vendors.
-
-## API Endpoints
-
-- POST /api/users/register - Register a new user
-- POST /api/users/login - Log in a user
-- GET /api/events - Get all events for the logged-in user
-- POST /api/events - Create a new event
-- PUT /api/events/:id - Update an event
-- DELETE /api/events/:id - Delete an event
-
-(Add more endpoints as they are implemented)
 
 ## Contributing
 
